@@ -7,33 +7,40 @@
 <link href="output.css" rel="stylesheet">
 </head>
 
-<body class="xs:pt-16 md:pt-20 bg-amber-50" >
+<body class="pt-20 bg-amber-50" >
 <!-- <div class="xs:bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500 xl:bg-purple-500 2xl:bg-pink-500 text-amber-50 
 h-1 text-xs text-center "></div> -->
 
 <!-- Fixed Header -->
-<header class="w-full border-b-pink-800 border-b-2 bg-pink-100 flex items-center justify-between py-1.5 fixed top-0 left-0 right-0 
+ <header class="w-full border-b-pink-800 border-b-2 bg-pink-100 flex items-center justify-between py-1.5 fixed top-0 left-0 right-0 
 xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 
-xs:h-16 md:h-20 z-10">
+h-20  z-50 ">
   <div class="h-full object-cover items-center justify-between
   xs:flex  xl:hidden ">
-    <img src="assets-package/menu-bar.svg" alt="" class="h-3/6 object-cover">
+    <img id="menu-btn" src="assets-package/menu-bar.svg" alt="" class="h-10 object-contain">
   </div>
   <div class="h-full flex items-center justify-between ">
-     <a href="#hero-section"><img src="assets-package/pathas1.svg" alt="" class="h-14 object-cover"></a> 
+     <a href="#hero-section"><img src="assets-package/pathas1.svg" alt="" class="h-14 object-cover mr-4"></a> 
   </div>
-  <ul class=" text-pink-800 *:hover:pink-rose-500  *:cursor-pointer flex items-center justify-between text-xl gap-x-14
-  xs:hidden  xl:flex">
-    <li><a href="#hero-section">Home</a> </li>
-    <li><a href="#lettering1">Lettering</a>  </li>
-    <li><a href="#gallary1">Artwork</a></li>
-    <li><a href="#services122">Services</a> </li>
-    <li><a href="#social-media">Contact</a></li>
-  </ul>
+  <nav id="mobile-menu" class=" max-xl:py-5
+  xl:flex items-center xs:h-auto xl:h-full w-full justify-center xs:absolute xl:static xs:bg-pink-200/50  
+  xl:bg-transparent max-xl:bg-amber-200 max-xl:backdrop-blur-sm transition ease-in-out duration-300 z-30
+  xs:top-[80px] xs:left-0 xs:right-0
+  xl:opacity-100 xl:translate-y-0
+  opacity-0 -translate-y-10 hidden">
+    <ul class=" text-pink-800 *:hover:pink-rose-500 w-full *:cursor-pointer flex items-center justify-center *:text-xl gap-x-14 
+    xs:flex-col xl:flex-row gap-5  ">
+      <li><a href="#hero-section">Home</a> </li>
+      <li><a href="#lettering1">Lettering</a>  </li>
+      <li><a href="#gallary1">Artwork</a></li>
+      <li><a href="#services122">Services</a> </li>
+      <li><a href="#social-media">Contact</a></li>
+    </ul>
+  </nav>
   <div class="h-full object-cover flex items-center justify-between">
-    <img src="assets-package/new-store.svg" alt="" class="h-4/6 object-cover">
+    <a href="store-shopping.html"><img src="assets-package/new-store.svg" alt="" class="h-12 object-cover ml-4"></a> 
   </div>
-</header>
+</header> 
 <!--(1)-->
 <section id="hero-section" class="  flex items-center flex-row
 xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 scroll-mt-24
@@ -227,7 +234,7 @@ xs:flex-col-reverse  xl:flex-row ">
   <p class="font-super text-center text-3xl text-pink-800 pt-5 pb-5 "> Services </p>
 <div class="  xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 grid     xs:grid-cols-1  md:grid-cols-2 xl:grid-cols-4 
  gap-y-16 gap-x-7 my-10  ">
-<div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+<div class="relative flex w-full flex-col rounded-xl bg-amber-50 bg-clip-border text-gray-700 shadow-md">
   <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-pink-500 to-pink-600">
     <img src="assets-package/Lettering.jpeg" class=" object-cover object-center h-full w-full">
   </div>
@@ -240,13 +247,12 @@ xs:flex-col-reverse  xl:flex-row ">
     </p>
   </div>
   <div class="p-6 pt-0">
-    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
       Contact Us
     </button>
   </div>
 </div>
-
-<div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+<div class="relative flex w-full flex-col rounded-xl bg-amber-50 bg-clip-border text-gray-700 shadow-md">
   <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-pink-500 to-pink-600">
     <img src="assets-package/Gouache1.jpg" class=" object-cover object-center h-full w-full">
   </div>
@@ -259,13 +265,12 @@ xs:flex-col-reverse  xl:flex-row ">
     </p>
   </div>
   <div class="p-6 pt-0">
-    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
       Contact Us
     </button>
   </div>
 </div>
-
-<div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+<div class="relative flex w-full flex-col rounded-xl bg-amber-50 bg-clip-border text-gray-700 shadow-md">
   <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-pink-500 to-pink-600">
     <img src="assets-package/watercolours.jpeg" class=" object-cover object-center h-full w-full">
   </div>
@@ -280,13 +285,12 @@ xs:flex-col-reverse  xl:flex-row ">
     </p>
   </div>
   <div class="p-6 pt-0">
-    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')" data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
       Contact Us
     </button>
   </div>
 </div>
-
-<div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+<div class="relative flex w-full flex-col rounded-xl bg-amber-50  bg-clip-border text-gray-700 shadow-md">
   <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-pink-500 to-pink-600">
     <img src="assets-package/engraving.jpeg" class=" object-cover object-center h-full w-full">
   </div>
@@ -300,7 +304,7 @@ xs:flex-col-reverse  xl:flex-row ">
   </div>
 
   <div class="p-6 pt-0">
-    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')"  data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+    <button onclick="window.open('https://www.instagram.com/lettersbysrivu/', '_blank')"  data-ripple-light="true" type="button" class="select-none rounded-lg bg-pink-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
       Contact Us
 
     </button>
@@ -308,27 +312,10 @@ xs:flex-col-reverse  xl:flex-row ">
 </div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--(6) -->
-<section class="bg-pink-50 scroll-mt-20 py-12" id="social-media" >
+<section class="bg-pink-50 scroll-mt-20 py-12
+xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 
+" id="social-media" >
   <p class="font-super text-center text-3xl text-pink-800 pt-10">Let’s Stay Connected </p>
   <ul class="flex justify-center mt-5 space-x-5">
     <li>
@@ -427,5 +414,31 @@ xs:flex-col-reverse  xl:flex-row ">
 <footer class="bg-pink-800 h-10 flex justify-center items-center text-center pt-10 pb-10">
   <p class="  text-rose-100 font-mono text-base ">  © 2025 lettersbysrivu. <br class="xs:flex md:hidden"> All rights reserved.</p>
 </footer>
+<!--JavaScript -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  let isOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      mobileMenu.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        mobileMenu.classList.remove('-translate-y-10', 'opacity-0');
+        mobileMenu.classList.add('translate-y-0', 'opacity-100');
+      });
+    } else {
+      mobileMenu.classList.add('-translate-y-10', 'opacity-0');
+      mobileMenu.classList.remove('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // Match transition duration
+    }
+  });
+</script>
 </body>
 </html>
