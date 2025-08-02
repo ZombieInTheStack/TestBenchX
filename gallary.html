@@ -1,86 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artwork</title>
-  <link href="output.css" rel="stylesheet">
-</head>
-<body class="xs:pt-16 md:pt-20 bg-amber-50">
-<!-- Fixed Header -->
- <header class="w-full border-b-pink-800 border-b-2 bg-pink-100 flex items-center justify-between py-1.5 fixed top-0 left-0 right-0 
-xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 
-xs:h-16 md:h-20  z-50 ">
-  <div class="h-full object-cover items-center justify-between
-  xs:flex  xl:hidden ">
-    <img id="menu-btn" src="assets-package/menu-bar.svg" alt="" class="h-8  object-cover">
-  </div>
-  <div class="h-full flex items-center justify-between ">
-     <a href="index.html"><img src="assets-package/pathas1.svg" alt="" class="h-12 object-cover xs:mx-2 xl:mr-4"></a> 
-  </div>
-  <nav id="mobile-menu" class=" max-xl:py-5
-  xl:flex items-center xs:h-auto xl:h-full w-full justify-center xs:absolute xl:static xs:bg-pink-200/50  
-  xl:bg-transparent max-xl:bg-amber-200 max-xl:backdrop-blur-sm transition ease-in-out duration-300 z-30
-  xs:top-[64px] md:top-[80px] xs:left-0 xs:right-0
-  xl:opacity-100 xl:translate-y-0
-  opacity-0 -translate-y-10 hidden">
-    <ul class=" text-pink-800 *:hover:pink-rose-500 w-full *:cursor-pointer flex items-center justify-center *:text-xl gap-x-14 
-    xs:flex-col xl:flex-row gap-5  ">
-      <li><a href="index.html">Home</a> </li>
-      <li><a href="lettering.html">Lettering</a>  </li>
-      <li><a href="#artwork">Artwork</a></li>
-      <li><a href="index.html#services122">Services</a> </li>
-      <li><a href="index.html#social-media">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="h-full object-cover flex items-center justify-between">
-    <a href="store-shopping.html"><img src="assets-package/new-store.svg" alt="" class="h-10 object-cover ml-4"></a> 
-  </div>
-</header> 
-<section id="artwork" class="scroll-pt-20 min-h-screen mb-52">
-  <p  class="font-super text-center text-3xl text-pink-800 pt-10 "> My Artwork </p>
-  <div class="grid  gap-y-8 gap-x-4 [&_img]:rounded-xl mt-10 [&_img]:outline-2 [&_img]:outline-pink-800  
-  xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 
-  xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl: 2xl:
-">
-    <img src="assets-package/artimg-1.jpg" alt="">
-    <img src="assets-package/artimg-2.jpg" alt="">
-    <img src="assets-package/artimg-3.jpg" alt="">
-    <img src="assets-package/artimg-4.jpg" alt="">
-    <img src="assets-package/artimg-5.jpg" alt="">
-    <img src="assets-package/artimg-6.jpg" alt="">
-    <img src="assets-package/artimg-7.jpg" alt="">
-    <img src="assets-package/artimg-8.jpg" alt="">
-  </div>
-</section>
-<footer class="bg-pink-800 h-10 flex justify-center items-center text-center pt-10 pb-10">
-  <p class="  text-rose-100 font-mono text-base ">  © 2025 lettersbysrivu. <br class="xs:flex md:hidden"> All rights reserved.</p>
-</footer>
-<!--JavaScript -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artwork</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="xs:pt-16 md:pt-20 bg-amber-50">
+    <!--Header-->
+    <header
+      class="w-full py-1.5 border-b-2 border-coffee-900 fixed top-0 left-0 right-0 bg-coffee-800 flex items-center justify-between xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 xs:h-16 md:h-20 z-50"
+    >
+      <div
+        class="h-full object-cover items-center justify-between xs:flex xl:hidden"
+      >
+        <img
+          id="menu-btn"
+          src="assets-package/menu-bar.svg"
+          alt=""
+          class="h-7 object-fill"
+        />
+      </div>
+      <div class="h-full flex items-center justify-center">
+        <a href="index.html"
+          ><img
+            src="assets-package/pathas1.svg"
+            alt=""
+            class="h-12 object-fill"
+        /></a>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="items-center transition ease-in-out duration-300 justify-center w-full hidden opacity-0 -translate-y-10 xl:flex xs:h-auto xl:h-full xs:absolute xl:static xs:bg-pink-200/50 xl:bg-transparent max-xl:bg-amber-200 max-xl:backdrop-blur-sm xs:top-[64px] md:top-[80px] xs:left-0 xs:right-0 xl:opacity-100 xl:translate-y-0 max-xl:py-5 z-50"
+        style="backdrop-filter: blur(10px)"
+      >
+        <ul
+          class="gap-x-14 gap-5 text-coffee-100 flex items-center justify-center *:hover:pink-rose-500 *:cursor-pointer *:text-xl w-full xs:flex-col xl:flex-row"
+        >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lettering.html">Lettering</a></li>
+          <li><a href="#gallary1">Artwork</a></li>
+          <li><a href="index.html#services122">Services</a></li>
+          <li><a href="index.html#social-media">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="h-full object-cover flex items-center justify-center">
+        <a href="store-shopping.html"
+          ><img
+            src="assets-package/new-store.svg"
+            alt=""
+            class="h-8 object-fill"
+        /></a>
+      </div>
+    </header>
+    <!--Artwork-->
+    <section id="gallary1" class="scroll-mt-20 bg-coffee-50 py-2">
+      <p class="font-Slab text-center text-4xl text-coffee-900 xs:py-4 md:py-8">
+        Artwork
+      </p>
+      <div
+        class="grid [&_img]:rounded-xl [&_img]:outline-2 [&_img]:outline-coffee-700 xs:px-3 sm:px-8 md:px-8 lg:px-16 xl:px-20 2xl:px-28 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 relative xs:gap-y-1 xs:gap-x-1 md:gap-y-10 xs:[&_div]:p-2 md:[&_div]:p-2"
+      >
+        <div class=""><img src="assets-package/artimg-2.jpg" alt="" /></div>
+        <div><img src="assets-package/artimg-3.jpg" alt="" /></div>
+        <div><img src="assets-package/artimg-4.jpg" alt="" /></div>
+        <div class=""><img src="assets-package/artimg-6.jpg" alt="" /></div>
+        <div class=""><img src="assets-package/artimg-7.jpg" alt="" /></div>
+        <div class=""><img src="assets-package/artimg-8.jpg" alt="" /></div>
+        <div class=""><img src="assets-package/artimg-7.jpg" alt="" /></div>
+      </div>
+    </section>
+    <!--Footer -->
+    <footer
+      class="bg-coffee-800 h-20 flex justify-center items-center text-center"
+    >
+      <p class="text-coffee-50 font-sans text-lg py-2">
+        © 2025 lettersbysrivu. <br class="xs:flex md:hidden" />
+        All rights reserved.
+      </p>
+    </footer>
+    <!--JavaScript -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-  let isOpen = false;
+      let isOpen = false;
 
-  menuBtn.addEventListener('click', () => {
-    isOpen = !isOpen;
+      menuBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
 
-    if (isOpen) {
-      mobileMenu.classList.remove('hidden');
-      requestAnimationFrame(() => {
-        mobileMenu.classList.remove('-translate-y-10', 'opacity-0');
-        mobileMenu.classList.add('translate-y-0', 'opacity-100');
+        if (isOpen) {
+          mobileMenu.classList.remove("hidden");
+          requestAnimationFrame(() => {
+            mobileMenu.classList.remove("-translate-y-10", "opacity-0");
+            mobileMenu.classList.add("translate-y-0", "opacity-100");
+          });
+        } else {
+          mobileMenu.classList.add("-translate-y-10", "opacity-0");
+          mobileMenu.classList.remove("translate-y-0", "opacity-100");
+
+          setTimeout(() => {
+            mobileMenu.classList.add("hidden");
+          }, 300); // Match transition duration
+        }
       });
-    } else {
-      mobileMenu.classList.add('-translate-y-10', 'opacity-0');
-      mobileMenu.classList.remove('translate-y-0', 'opacity-100');
-
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300); // Match transition duration
-    }
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>
